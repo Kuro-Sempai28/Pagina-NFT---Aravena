@@ -1,0 +1,482 @@
+* {
+    Margin:0;
+    padding:0;
+ }
+ /*ETIQUETAS DIRECTAS */
+ 
+ body{
+    width: 100vw;
+    overflow: auto;
+}
+ header{
+     width: 100%;
+     grid-area: header;
+ }
+ main{
+     width: 100%;
+ }
+ 
+ h1{
+     color: rgb(95, 83, 136);
+     font-size: 100px;
+     text-align: center;
+     grid-area: h1; 
+ }
+ @media (max-width: 768px){
+     h1{
+         line-height: 100px;
+         font-size: 30px;
+     }
+ }
+
+
+section{
+     width: 100%;
+     margin: 0%;
+     padding: 0%;
+ }
+ a
+  {
+      text-decoration: none;
+      color: rgb(95, 83, 136);
+      font-family: 'Chakra Petch', sans-serif;
+      font-size: 17.5px;
+      font-weight: bold; 
+  }
+  a:hover{
+      font-size: 25px;
+      transition: 0.5s;
+  }
+
+  @media (max-width: 768px){
+    a{
+        font-size: 75%;
+    }  
+ }
+  
+ /*CLASES*/
+
+/*CLASS GENERAL */
+ 
+
+#menu{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.items_menu{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.fondo1{
+    background: radial-gradient(rgb(40, 11, 80), rgb(43, 25, 96), rgb(56, 72, 153));
+    background-size: 100% 100%; 
+    background-position: center; 
+    
+}
+
+
+
+footer{
+   text-align: center;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   margin-top: 70px;
+   color:rgba(153, 144, 187, 0.875);
+   grid-area: footer;
+   align-items: baseline;
+   width: 100%;
+}
+textarea{
+    border-radius: 10%;
+    color: gray;
+    background: radial-gradient(rgba(57, 50, 84, 0.987), transparent);
+    margin-top: 7%;
+}
+
+.iconoHome:hover{
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+
+@keyframes animacionImagenCentral{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+
+}
+ .redondeadoImagenes{
+    border-radius: 50%;
+    animation-name: animacionImagenCentral;
+    animation-iteration-count:initial;
+    animation-timing-function:ease-in-out;
+    animation-duration: 5s;
+    animation-delay: 0;
+}
+
+
+/*CLASS HOME*/
+.grid{
+    display: grid;
+    justify-items: center;
+    grid-template-areas: 
+    "h1"
+    "h2"
+    "img "
+    "text"
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+#text{
+    grid-area: text;
+    text-align: center;
+}
+.home__parrafo{
+    color: rgb(14, 9, 31);
+    text-align: center;
+    font-size: large;
+    background-color: rgba(95, 83, 136, 0.412);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+@media (max-width: 375px){
+    .home__parrafo{
+        font-size: 90%;
+    }
+}
+
+
+ .home__titulo{
+     margin-top: 2%;
+ }
+ @media (max-width: 768px){
+     .home__titulo{
+         font-size: 270%;
+     }
+ }
+ .home__titulo2{
+    color: rgb(14, 9, 31);
+    text-align: center;
+    font-size: 33px;
+    background-color: rgba(95, 83, 136, 0.412);
+    margin-top: 4%;
+ } 
+ @media (max-width: 375px){
+     .home__titulo2{
+         font-size: 160%;
+     }
+ }
+ 
+ .Japones{
+    font-size: large;
+    font-family: serif;
+    color: rgb(95, 83, 136);
+    text-align: center;
+}
+
+ .ImagenGrandeCentrada{
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    grid-area: img;
+    align-self: center;
+    visibility: hidden;
+}
+
+@media (max-width: 375px){
+    .redondeadoImagenes{
+     height: 17rem;
+  }
+}  
+.Redondeado{
+    border-radius: 100%;
+}
+
+ /*CLASS WWA*/
+ .grid2{
+    display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 15% 1.3fr 1.6fr 7%; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". wwa__titulo ."
+    "img texto img2"
+    ". form ."
+    ". footer ."; 
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    
+}
+.wwa__titulo { grid-area: titulo;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 200%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    grid-area: h1;
+    text-align: center;
+ }
+
+.texto { grid-area: texto; }
+
+.img { grid-area: img; }
+
+.img2 {  grid-area: img2; }
+@media (max-width: 375px){
+    .img{
+        display: none;
+    }
+    .img2{
+        display: none;
+    }
+}
+
+.form { grid-area: form; }
+
+.footer { grid-area: footer; } 
+
+ .wwa__comentarios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ .wwa__comentarios__legend{
+     font-family: 'Courier New', Courier, monospace;
+     font-size: 30px;
+     font-weight: bold;
+     color: rgba(109, 100, 142, 0.94);
+     text-align: center;
+     
+ }
+ @media (max-width: 375px){
+     .wwa__comentarios__legend{
+         font-size: 150%;
+         margin-bottom: 10%;
+     }
+ }
+
+ .wwa__comentarios_nombre{
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     color:  rgba(109, 100, 142, 0.94);
+     font-weight: 700;
+ }
+ .wwa__recuadro{
+    height: 17px;
+    width: 100px; 
+    background: radial-gradient( rgba(109, 100, 142, 0.94), transparent);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: rgb(136, 124, 177);
+    
+ }
+
+ .wwa__comentarios__comentarios{
+     margin-top: 5px;
+     background: radial-gradient( rgba(132, 122, 169, 0.94), transparent);
+ }
+ .wwa__boton{
+    background-color: rgba(85, 51, 99, 0.768);
+ }
+ @keyframes wwa__parrafo{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+
+}
+ .wwa__parrafo{
+    font-size: 30px;
+    font-family: 'Chakra Petch', sans-serif;
+    color: rgba(140, 94, 159, 0.933);
+    text-align: center;
+    padding: 7%;
+    line-height: 300%;
+    animation-name: wwa__parrafo;
+    animation-iteration-count:initial;
+    animation-timing-function:ease-in-out;
+    animation-duration: 3s;
+    animation-delay: 0;
+
+}
+@media (max-width: 375px){
+    .wwa__parrafo{
+        font-size: 140%;
+        line-height: normal;
+    }
+}
+.wwa__ubicacionComentarios{
+  margin-left: 50px;
+}
+.text_img{
+   display: flex;
+   align-items: center;
+}
+.wwa__ubicacionComentarios{
+   margin-left: 50px;
+}
+
+    /*CLASS NFT*/
+
+ .nft{
+     display: flex;
+     flex-wrap: wrap;
+     margin: 50px 80px;
+     justify-content: space-between
+}
+@media (max-width: 768px){
+    .nft{
+        gap: 50px;
+    }
+}
+     
+.nft__img{
+    border-radius: 20%;
+    border: rgba(77, 77, 77, 0.905);
+    border: double;  
+}
+@media (max-width: 375px){
+    .nft__img{
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+ .nft__coleccions{
+     background-color: hsla(252, 25%, 26%, 0.529);
+     margin-right: 85%;
+     border-top-right-radius: 40px 40px;
+     border-bottom-right-radius: 40px 40px;
+     
+ }
+ @media (max-width: 375px){
+     .nft__coleccions{
+        margin-right: 66%;
+     }
+ }
+ 
+
+ .nft__titulo{
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 500%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+
+ }
+ @media (max-width: 768px){
+    .nft__selector{
+        width: 80%;
+    }
+ }
+ @media (max-width: 375px){
+     .nft__titulo{
+         font-size: 230%;
+     }
+ }
+ .nft__video{
+     display: flex;
+     justify-content: center;
+ }
+
+
+ /*CLASS WL*/
+
+ .wl__titulo{
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 450%;
+    margin: 15%;
+    color: rgb(56, 31, 58);
+    background-color: rgba(95, 83, 136, 0.412);
+    border-top-left-radius: 40px 40px;
+    border-top-right-radius: 40px 40px;
+    border-bottom-left-radius: 40px 40px;
+    border-bottom-right-radius: 40px 40px;
+    
+
+ }
+ @media (max-width: 375px){
+     .wl__titulo{
+         font-size: 210%;
+         line-height: normal;
+     }
+ }
+ @media (max-width: 375px){
+    .wl__parrafo{
+        font-size: 65%;
+    }
+}
+ .wl__datos{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+   font-size: larger;
+   text-align: center;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   color:  rgba(109, 100, 142, 0.94);
+   font-weight: 700;
+   background-color: rgba(95, 83, 136, 0.412);
+   background-size:auto;
+ }
+ .benefist__titulo{
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 500%;
+    margin: 15%;
+    color: rgb(56, 31, 58);
+    background-color: rgba(95, 83, 136, 0.412);
+    border-top-left-radius: 40px 40px;
+    border-top-right-radius: 40px 40px;
+    border-bottom-left-radius: 40px 40px;
+    border-bottom-right-radius: 40px 40px;
+
+ }
+ .wl__imput{
+    height: 17px;
+    width: 100px; 
+    background: radial-gradient(rgba(23, 19, 38, 0.96), transparent);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: rgb(136, 124, 177);
+
+ }
+ @media (max-width: 375px){
+    .wl__imput{
+        height: auto;
+        width: auto;
+    }
+}
+ .wl__discord{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(136, 124, 177);
+    text-align: center;
+    margin-top: 40px;
+ }
+
+ /*CLASS BENEFIST*/
+
+ .benefist__parrafo{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    padding: 0px 200px;
+    color: rgb(56, 31, 58);
+    background-color: rgba(95, 83, 136, 0.802);
+    border-top-left-radius: 40px 40px;
+    border-top-right-radius: 40px 40px;
+    border-bottom-left-radius: 40px 40px;
+    border-bottom-right-radius: 40px 40px;
+}
+@media (max-width: 375px){
+    .benefist__parrafo{
+        font-size: 150%;
+        padding: 5%;
+        margin: 2%;
+    }
+}
+@media (max-width: 375px){
+    .benefist__titulo{
+        font-size: 250%;
+        line-height: normal;
+    }
+}
