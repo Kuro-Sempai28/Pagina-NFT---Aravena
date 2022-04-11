@@ -44,9 +44,9 @@ section{
       font-weight: bold; 
   }
   a:hover{
-      font-size: 25px;
-      transition: 0.5s;
-  }
+    font-size: 25px;
+    transition: 0.5s;
+}
 
   @media (max-width: 768px){
     a{
