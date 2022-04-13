@@ -354,7 +354,13 @@ textarea{
         margin-right: 66%;
      }
  }
- 
+ .nft__tamaño-img{
+     height: 500px;
+     width: 33%;
+     margin-left: 458px;
+     margin-bottom: 10%;
+     border-radius: 20%;
+ }
 
  .nft__titulo{
     font-family: 'Chakra Petch', sans-serif;
