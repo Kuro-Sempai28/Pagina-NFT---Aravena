@@ -441,6 +441,7 @@ textarea{
    font-weight: 700;
    background-color: rgba(95, 83, 136, 0.412);
    background-size:auto;
+   padding-bottom: 10px;
  }
  .benefist__titulo{
     font-family: 'Chakra Petch', sans-serif;
@@ -455,12 +456,13 @@ textarea{
 
  }
  .wl__imput{
-    height: 17px;
+    height: 27px;
     width: 100px; 
     background: radial-gradient(rgba(23, 19, 38, 0.96), transparent);
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     color: rgb(136, 124, 177);
+    margin: 2px;
 
  }
  @media (max-width: 375px){
