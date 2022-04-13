@@ -67,7 +67,7 @@ section{
     align-items: center;
     margin-top: 10px;
 }
-@media (max-width: 768px){
+@media (max-width: 767px){
     #menu{
         display: none;
     }
@@ -245,11 +245,12 @@ textarea{
 .img { grid-area: img; }
 
 .img2 {  grid-area: img2; }
-@media (max-width: 375px){
-    .img{
+
+@media (max-width: 768px){
+    #img{
         display: none;
     }
-    .img2{
+    #img2{
         display: none;
     }
 }
@@ -373,14 +374,17 @@ textarea{
         margin-right: 66%;
      }
  }
+ #nft__imagen__centrada{
+     justify-content: center;
+
+ }
  .nft__tamaño-img{
      height: 500px;
      width: 33%;
-     margin-left: 458px;
+     /* margin-left: 458px; */
      margin-bottom: 10%;
      border-radius: 20%;
  }
-
  .nft__titulo{
     font-family: 'Chakra Petch', sans-serif;
     font-size: 500%;
