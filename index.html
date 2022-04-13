@@ -16,7 +16,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,700;1,300;1,600&display=swap" rel="stylesheet">   
 </head>
     <body class="fondo1">
-    <header>
+    <header> 
+        <!-- MENU PARA MOVIL  -->
+        <nav id="vista__celular" class="navbar navbar-light fixed-top ">
+            <div class="container-fluid">
+                <a href="index.html"> <img class="iconoHome" src="../NFT Proyect/img/firma.png" alt="Home" height="50px" width="50px"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header fondo3">
+                  <h5 class="offcanvas-title color__titulo__navmovil" id="offcanvasNavbarLabel">LennasUniverse</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body fondo2">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active color__Pages__navmovil" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active color__Pages__navmovil" aria-current="page" href="../NFT Proyect/pages/whoweare.html">Who We Are</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active color__Pages__navmovil" aria-current="page" href="../NFT Proyect/pages/nft.html">Our Collection</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active color__Pages__navmovil" aria-current="page" href="../NFT Proyect/pages/whitelist.html">White List</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active color__Pages__navmovil" aria-current="page" href="../NFT Proyect/pages/benefit.html">Benefist</a>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+    
+    <!-- MENU PARA DESKTOP  -->
         <nav id="menu">
             <div>
                 <a href="index.html"> <img class="iconoHome" src="../NFT Proyect/img/firma.png" alt="Home" height="50px" width="50px"></a>
@@ -35,6 +71,7 @@
             </div>
            </nav>
     </header>
+
     <main class="grid">
         <div>
             <h1 class="home__titulo"> LennasUniverse </h1>
@@ -68,4 +105,5 @@
     
     
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </html>
