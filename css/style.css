@@ -339,52 +339,105 @@ textarea{
 
     /*CLASS NFT*/
 
- .nft{
-     display: flex;
-     flex-wrap: wrap;
-     margin: 50px 80px;
-     justify-content: space-between
-}
-@media (max-width: 768px){
-    .nft{
-        gap: 50px;
-    }
-}
-     
-.nft__img{
+ @media (min-width: 320px){
+ .nft__tamaño-img1{
+    height: 350px;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 20%;
     border-radius: 20%;
-    border: rgba(77, 77, 77, 0.905);
-    border: double;  
 }
-@media (max-width: 375px){
-    .nft__img{
-        align-items: center;
-        justify-content: space-evenly;
-    }
 }
- .nft__coleccions{
-     background-color: hsla(252, 25%, 26%, 0.529);
-     margin-right: 85%;
-     border-top-right-radius: 40px 40px;
-     border-bottom-right-radius: 40px 40px;
-     
- }
- @media (max-width: 375px){
-     .nft__coleccions{
-        margin-right: 66%;
-     }
- }
- #nft__imagen__centrada{
-     justify-content: center;
 
- }
- .nft__tamaño-img{
-     height: 500px;
-     width: 33%;
-     /* margin-left: 458px; */
-     margin-bottom: 10%;
-     border-radius: 20%;
- }
+@media (min-width: 320px){
+    .nft__tamaño-img2y3{
+       height: 350px;
+       width: 70%;
+       margin-left: 16%;
+       margin-bottom: 20%;
+       border-radius: 20%;
+   }
+   }
+ @media (min-width: 767px){
+ .nft__tamaño-img1{
+    height: 500px;
+    margin-left: 16%;
+    margin-bottom: 20%;
+    border-radius: 20%;
+}
+}
+
+@media (min-width: 767px){
+    .nft__tamaño-img2y3{
+       height: 500px;
+       margin-left: 16%;
+       margin-bottom: 20%;
+       border-radius: 20%;
+   }
+   }
+
+    @media (min-width: 1024px){
+    .nft__tamaño-img1{
+       height: 500px;
+       width: 40%;
+       height: 33%;
+       margin-left: 30%;
+       margin-bottom: 15%;
+       border-radius: 20%;
+   }
+   }
+   
+   @media (min-width: 1024px){
+       .nft__tamaño-img2y3{
+          height: 500px;
+          width: 40%;
+          height: 33%;
+          margin-left: 30%;
+          margin-bottom: 15%;
+          border-radius: 20%;
+      }
+      } 
+ @media (min-width: 1200px){
+ .nft__tamaño-img1{
+    height: 500px;
+    width: 40%;
+    margin-left: 30%;
+    margin-bottom: 10%;
+    border-radius: 20%;
+}
+}
+
+@media (min-width: 1200px){
+    .nft__tamaño-img2y3{
+       height: 500px;
+       width: 40%;
+       margin-left: 31%;
+       margin-bottom: 10%;
+       border-radius: 20%;
+   }
+   }
+
+ @media (min-width: 1440px){
+ .nft__tamaño-img1{
+    height: 500px;
+    width: 40%;
+    margin-left: 37%;
+    margin-bottom: 10%;
+    border-radius: 20%;
+}
+}
+
+@media (min-width: 1440px){
+    .nft__tamaño-img2y3{
+       height: 500px;
+       width: 40%;
+       margin-left: 31%;
+       margin-bottom: 10%;
+       border-radius: 20%;
+   }
+   }
+
+
  .nft__titulo{
     font-family: 'Chakra Petch', sans-serif;
     font-size: 500%;
