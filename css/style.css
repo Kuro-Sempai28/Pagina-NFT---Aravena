@@ -242,9 +242,36 @@ textarea{
 
 .texto { grid-area: texto; }
 
-.img { grid-area: img; }
+@keyframes img{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 
-.img2 {  grid-area: img2; }
+}
+ #img{
+    animation-name: img;
+    animation-iteration-count:initial;
+    animation-timing-function:ease-in-out;
+    animation-duration: 10s;
+    animation-delay: 0;
+}
+
+@keyframes img2{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+
+}
+ #img2{
+    animation-name: img2;
+    animation-iteration-count:initial;
+    animation-timing-function:ease-in-out;
+    animation-duration: 10s;
+    animation-delay: 0;
+}
+
+
+#img { grid-area: img; }
+
+#img2 {  grid-area: img2; }
 
 @media (max-width: 768px){
     #img{
@@ -274,7 +301,7 @@ textarea{
  }
  @media (max-width: 375px){
      .wwa__comentarios__legend{
-         font-size: 150%;
+         font-size: 100%;
          margin-bottom: 10%;
      }
  }
@@ -387,16 +414,16 @@ textarea{
    }
    }
    
-   @media (min-width: 1024px){
-       .nft__tamaño-img2y3{
-          height: 500px;
-          width: 40%;
-          height: 33%;
-          margin-left: 30%;
-          margin-bottom: 15%;
-          border-radius: 20%;
-      }
-      } 
+@media (min-width: 1024px){
+    .nft__tamaño-img2y3{
+       height: 500px;
+       width: 40%;
+       height: 33%;
+       margin-left: 30%;
+       margin-bottom: 15%;
+       border-radius: 20%;
+    }
+    } 
  @media (min-width: 1200px){
  .nft__tamaño-img1{
     height: 500px;
@@ -462,6 +489,24 @@ textarea{
 
 
  /*CLASS WL*/
+
+ @keyframes wl__titulo{
+    from {
+        margin-right: 100%;
+        opacity: 0%;
+      }
+    
+      to {
+        margin-right: 15%;
+        opacity: 100%;
+      }
+
+}
+ .wl__titulo{
+    animation-name: wl__titulo;
+    animation-duration: 5s;
+    animation-delay: 0;
+}
 
  .wl__titulo{
     font-family: 'Chakra Petch', sans-serif;
@@ -538,7 +583,24 @@ textarea{
  }
 
  /*CLASS BENEFIST*/
+ 
+ @keyframes benefist__parrafo{
+    from {
+        margin-left: 100%;
+        width: 300%
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
 
+}
+ .benefist__parrafo{
+    animation-name: benefist__parrafo;
+    animation-duration: 5s;
+    animation-delay: 0;
+}
  .benefist__parrafo{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
@@ -558,6 +620,25 @@ textarea{
         margin: 2%;
     }
 }
+
+@keyframes benefist__titulo{
+    from {
+        margin-right: 100%;
+        opacity: 0%;
+      }
+    
+      to {
+        margin-right: 15%;
+        opacity: 100%;
+      }
+
+}
+ .benefist__titulo{
+    animation-name: benefist__titulo;
+    animation-duration: 5s;
+    animation-delay: 0;
+}
+
 @media (max-width: 375px){
     .benefist__titulo{
         font-size: 250%;
